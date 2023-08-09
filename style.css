@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color:rgb(251, 194, 194);
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .title {
+    background-color: #1d1c1c;
+    color: #FFFF00;
+    padding: 12px;
+    text-align:center;
+    font-family: 'Permanent Marker', cursive;
+    border-bottom: solid rgb(255, 0, 0);
+  }
+  
+  #filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+  
+  .filter-element {
+    background-color: #fff;
+    color: rgb(9, 91, 129);
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 6px;
+    cursor: pointer;
+  }
+  
+  .filter-element:hover {
+    background-color: #0fc5eeaa;
+    color:white;
+
+  }
+  
+  .filter-active {
+    background-color: #278ea5;
+    border: rgb(0, 0, 0) solid 2px;
+    color: white;
+  }
+  
+  #gallery-container {
+    width: 90%;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 0.5rem;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .gallery-image.hide-image {
+    display: none;
+  }
+  .arrow-link {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
+  .arrow-link a {
+    display: block;
+    padding: 10px;
+    background-color: #11ccd9;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    
+    
+  }
+  
+  @media (max-width: 920px) {
+    #gallery-container {
+      column-count: 2;
+    }
+  }
